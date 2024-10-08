@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6083D9220874031607CE0166 /* Pods_SnookerBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB2D52EE10D0FF4E7E87627 /* Pods_SnookerBar.framework */; };
+		64019D0D2CAD388B00C87402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D0C2CAD388B00C87402 /* AppDelegate.swift */; };
+		64019D0F2CAD388B00C87402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D0E2CAD388B00C87402 /* SceneDelegate.swift */; };
+		64019D112CAD388B00C87402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D102CAD388B00C87402 /* ViewController.swift */; };
+		64019D142CAD388B00C87402 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64019D132CAD388B00C87402 /* Base */; };
+		64019D162CAD388C00C87402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64019D152CAD388C00C87402 /* Assets.xcassets */; };
+		64019D192CAD388C00C87402 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64019D182CAD388C00C87402 /* Base */; };
+		64019D272CAD390800C87402 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D262CAD390800C87402 /* MainView.swift */; };
+		64019D292CAD393000C87402 /* BackImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D282CAD393000C87402 /* BackImageView.swift */; };
+		64019D2B2CAD393F00C87402 /* View + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D2A2CAD393F00C87402 /* View + Extension.swift */; };
+		64019D2D2CAD394500C87402 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D2C2CAD394500C87402 /* Color + Extension.swift */; };
+		64019D2F2CAD5C8200C87402 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D2E2CAD5C8200C87402 /* InitialView.swift */; };
+		64019D312CAD684300C87402 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D302CAD684300C87402 /* LogInView.swift */; };
+		64019D332CAD6BB700C87402 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D322CAD6BB700C87402 /* RegistrationView.swift */; };
+		64019D362CAD788100C87402 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D352CAD788100C87402 /* BookingView.swift */; };
+		64A085A72CAEB81A00CB77ED /* NewsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A085A62CAEB81A00CB77ED /* NewsDetailsView.swift */; };
+		64AB80C32CAEA16B0089D316 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB80C22CAEA16B0089D316 /* RulesView.swift */; };
+		64AB80C52CAEAC5B0089D316 /* RuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB80C42CAEAC5B0089D316 /* RuleDetailView.swift */; };
+		64AB80C72CAEB0960089D316 /* NewsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB80C62CAEB0960089D316 /* NewsCellView.swift */; };
+		64C1738F2CB3E81F00255254 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64C1738E2CB3E81F00255254 /* GoogleService-Info.plist */; };
+		64E0D4122CB2A94B00DF6190 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0D4112CB2A94B00DF6190 /* MenuView.swift */; };
+		64E0D4142CB2AAA500DF6190 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0D4132CB2AAA500DF6190 /* AuthViewModel.swift */; };
+		64E0D4192CB2AC2E00DF6190 /* InitialRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0D4182CB2AC2E00DF6190 /* InitialRootView.swift */; };
+		64F5CDC32CAD8103006D883D /* BarNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5CDC22CAD8103006D883D /* BarNewsView.swift */; };
+		64F5CDC52CAD88C8006D883D /* RulesCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5CDC42CAD88C8006D883D /* RulesCellView.swift */; };
+		64F5CDC82CAD8940006D883D /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5CDC72CAD8940006D883D /* QRView.swift */; };
+		64F5CDCB2CAD8AAA006D883D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5CDCA2CAD8AAA006D883D /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C3DB0D74BB9555A99D7AD75 /* Pods-SnookerBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnookerBar.release.xcconfig"; path = "Target Support Files/Pods-SnookerBar/Pods-SnookerBar.release.xcconfig"; sourceTree = "<group>"; };
+		3362129DE834C2D21C68A627 /* Pods-SnookerBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnookerBar.debug.xcconfig"; path = "Target Support Files/Pods-SnookerBar/Pods-SnookerBar.debug.xcconfig"; sourceTree = "<group>"; };
+		64019D092CAD388B00C87402 /* SnookerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnookerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64019D0C2CAD388B00C87402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64019D0E2CAD388B00C87402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64019D102CAD388B00C87402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64019D132CAD388B00C87402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64019D152CAD388C00C87402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64019D182CAD388C00C87402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64019D1A2CAD388C00C87402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64019D262CAD390800C87402 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		64019D282CAD393000C87402 /* BackImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackImageView.swift; sourceTree = "<group>"; };
+		64019D2A2CAD393F00C87402 /* View + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Extension.swift"; sourceTree = "<group>"; };
+		64019D2C2CAD394500C87402 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		64019D2E2CAD5C8200C87402 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		64019D302CAD684300C87402 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		64019D322CAD6BB700C87402 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		64019D352CAD788100C87402 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		64A085A62CAEB81A00CB77ED /* NewsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsView.swift; sourceTree = "<group>"; };
+		64AB80C22CAEA16B0089D316 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		64AB80C42CAEAC5B0089D316 /* RuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDetailView.swift; sourceTree = "<group>"; };
+		64AB80C62CAEB0960089D316 /* NewsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCellView.swift; sourceTree = "<group>"; };
+		64C1738E2CB3E81F00255254 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		64C173902CB3E82900255254 /* SnookerBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnookerBar.entitlements; sourceTree = "<group>"; };
+		64E0D4112CB2A94B00DF6190 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		64E0D4132CB2AAA500DF6190 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		64E0D4182CB2AC2E00DF6190 /* InitialRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialRootView.swift; sourceTree = "<group>"; };
+		64F5CDC22CAD8103006D883D /* BarNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarNewsView.swift; sourceTree = "<group>"; };
+		64F5CDC42CAD88C8006D883D /* RulesCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCellView.swift; sourceTree = "<group>"; };
+		64F5CDC72CAD8940006D883D /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+		64F5CDCA2CAD8AAA006D883D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BEB2D52EE10D0FF4E7E87627 /* Pods_SnookerBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnookerBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64019D062CAD388B00C87402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6083D9220874031607CE0166 /* Pods_SnookerBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1036A918C5CC63B5427EFF8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3362129DE834C2D21C68A627 /* Pods-SnookerBar.debug.xcconfig */,
+				2C3DB0D74BB9555A99D7AD75 /* Pods-SnookerBar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64019D002CAD388A00C87402 = {
+			isa = PBXGroup;
+			children = (
+				64019D0B2CAD388B00C87402 /* SnookerBar */,
+				64019D0A2CAD388B00C87402 /* Products */,
+				1036A918C5CC63B5427EFF8F /* Pods */,
+				78F73327CE8B9249A5B1DE46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		64019D0A2CAD388B00C87402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64019D092CAD388B00C87402 /* SnookerBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64019D0B2CAD388B00C87402 /* SnookerBar */ = {
+			isa = PBXGroup;
+			children = (
+				64C173902CB3E82900255254 /* SnookerBar.entitlements */,
+				64C1738E2CB3E81F00255254 /* GoogleService-Info.plist */,
+				64E0D4172CB2AC2100DF6190 /* New Group */,
+				64E0D4102CB2A94300DF6190 /* Menu */,
+				64AB80C12CAEA1640089D316 /* Rules */,
+				64F5CDC92CAD8A9E006D883D /* Settings */,
+				64F5CDC62CAD893A006D883D /* QR */,
+				64F5CDC12CAD80F7006D883D /* News */,
+				64019D342CAD787700C87402 /* Booking */,
+				64019D252CAD38C700C87402 /* Extensions */,
+				64019D242CAD38C200C87402 /* Components */,
+				64019D232CAD38A800C87402 /* Main */,
+				64019D222CAD38A300C87402 /* Auth */,
+				64019D212CAD389F00C87402 /* Root */,
+				64019D202CAD389B00C87402 /* APP */,
+				64019D122CAD388B00C87402 /* Main.storyboard */,
+				64019D152CAD388C00C87402 /* Assets.xcassets */,
+				64019D172CAD388C00C87402 /* LaunchScreen.storyboard */,
+				64019D1A2CAD388C00C87402 /* Info.plist */,
+			);
+			path = SnookerBar;
+			sourceTree = "<group>";
+		};
+		64019D202CAD389B00C87402 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				64019D0C2CAD388B00C87402 /* AppDelegate.swift */,
+				64019D0E2CAD388B00C87402 /* SceneDelegate.swift */,
+				64019D102CAD388B00C87402 /* ViewController.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		64019D212CAD389F00C87402 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				64E0D4182CB2AC2E00DF6190 /* InitialRootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		64019D222CAD38A300C87402 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				64019D2E2CAD5C8200C87402 /* InitialView.swift */,
+				64019D302CAD684300C87402 /* LogInView.swift */,
+				64019D322CAD6BB700C87402 /* RegistrationView.swift */,
+				64E0D4132CB2AAA500DF6190 /* AuthViewModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		64019D232CAD38A800C87402 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				64019D262CAD390800C87402 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		64019D242CAD38C200C87402 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				64019D282CAD393000C87402 /* BackImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		64019D252CAD38C700C87402 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64019D2A2CAD393F00C87402 /* View + Extension.swift */,
+				64019D2C2CAD394500C87402 /* Color + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64019D342CAD787700C87402 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				64019D352CAD788100C87402 /* BookingView.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		64AB80C12CAEA1640089D316 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				64AB80C22CAEA16B0089D316 /* RulesView.swift */,
+				64F5CDC42CAD88C8006D883D /* RulesCellView.swift */,
+				64AB80C42CAEAC5B0089D316 /* RuleDetailView.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		64E0D4102CB2A94300DF6190 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				64E0D4112CB2A94B00DF6190 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		64E0D4172CB2AC2100DF6190 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		64F5CDC12CAD80F7006D883D /* News */ = {
+			isa = PBXGroup;
+			children = (
+				64F5CDC22CAD8103006D883D /* BarNewsView.swift */,
+				64AB80C62CAEB0960089D316 /* NewsCellView.swift */,
+				64A085A62CAEB81A00CB77ED /* NewsDetailsView.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		64F5CDC62CAD893A006D883D /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				64F5CDC72CAD8940006D883D /* QRView.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		64F5CDC92CAD8A9E006D883D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				64F5CDCA2CAD8AAA006D883D /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		78F73327CE8B9249A5B1DE46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2D52EE10D0FF4E7E87627 /* Pods_SnookerBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64019D082CAD388B00C87402 /* SnookerBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64019D1D2CAD388C00C87402 /* Build configuration list for PBXNativeTarget "SnookerBar" */;
+			buildPhases = (
+				504A7D301FC7E16767C8FDC2 /* [CP] Check Pods Manifest.lock */,
+				64019D052CAD388B00C87402 /* Sources */,
+				64019D062CAD388B00C87402 /* Frameworks */,
+				64019D072CAD388B00C87402 /* Resources */,
+				64543039396373A6D733795B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnookerBar;
+			productName = SnookerBar;
+			productReference = 64019D092CAD388B00C87402 /* SnookerBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64019D012CAD388A00C87402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					64019D082CAD388B00C87402 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 64019D042CAD388A00C87402 /* Build configuration list for PBXProject "SnookerBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64019D002CAD388A00C87402;
+			productRefGroup = 64019D0A2CAD388B00C87402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64019D082CAD388B00C87402 /* SnookerBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64019D072CAD388B00C87402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64019D162CAD388C00C87402 /* Assets.xcassets in Resources */,
+				64C1738F2CB3E81F00255254 /* GoogleService-Info.plist in Resources */,
+				64019D192CAD388C00C87402 /* Base in Resources */,
+				64019D142CAD388B00C87402 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		504A7D301FC7E16767C8FDC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnookerBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64543039396373A6D733795B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64019D052CAD388B00C87402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AB80C32CAEA16B0089D316 /* RulesView.swift in Sources */,
+				64F5CDCB2CAD8AAA006D883D /* SettingsView.swift in Sources */,
+				64019D112CAD388B00C87402 /* ViewController.swift in Sources */,
+				64AB80C52CAEAC5B0089D316 /* RuleDetailView.swift in Sources */,
+				64F5CDC32CAD8103006D883D /* BarNewsView.swift in Sources */,
+				64E0D4122CB2A94B00DF6190 /* MenuView.swift in Sources */,
+				64019D2F2CAD5C8200C87402 /* InitialView.swift in Sources */,
+				64019D2D2CAD394500C87402 /* Color + Extension.swift in Sources */,
+				64019D272CAD390800C87402 /* MainView.swift in Sources */,
+				64019D292CAD393000C87402 /* BackImageView.swift in Sources */,
+				64019D0D2CAD388B00C87402 /* AppDelegate.swift in Sources */,
+				64E0D4192CB2AC2E00DF6190 /* InitialRootView.swift in Sources */,
+				64A085A72CAEB81A00CB77ED /* NewsDetailsView.swift in Sources */,
+				64019D312CAD684300C87402 /* LogInView.swift in Sources */,
+				64019D2B2CAD393F00C87402 /* View + Extension.swift in Sources */,
+				64019D0F2CAD388B00C87402 /* SceneDelegate.swift in Sources */,
+				64F5CDC52CAD88C8006D883D /* RulesCellView.swift in Sources */,
+				64019D362CAD788100C87402 /* BookingView.swift in Sources */,
+				64E0D4142CB2AAA500DF6190 /* AuthViewModel.swift in Sources */,
+				64AB80C72CAEB0960089D316 /* NewsCellView.swift in Sources */,
+				64019D332CAD6BB700C87402 /* RegistrationView.swift in Sources */,
+				64F5CDC82CAD8940006D883D /* QRView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		64019D122CAD388B00C87402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64019D132CAD388B00C87402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64019D172CAD388C00C87402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64019D182CAD388C00C87402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64019D1B2CAD388C00C87402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64019D1C2CAD388C00C87402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64019D1E2CAD388C00C87402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3362129DE834C2D21C68A627 /* Pods-SnookerBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnookerBar/SnookerBar.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnookerBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		64019D1F2CAD388C00C87402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3DB0D74BB9555A99D7AD75 /* Pods-SnookerBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SnookerBar/SnookerBar.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnookerBar/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64019D042CAD388A00C87402 /* Build configuration list for PBXProject "SnookerBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64019D1B2CAD388C00C87402 /* Debug */,
+				64019D1C2CAD388C00C87402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64019D1D2CAD388C00C87402 /* Build configuration list for PBXNativeTarget "SnookerBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64019D1E2CAD388C00C87402 /* Debug */,
+				64019D1F2CAD388C00C87402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64019D012CAD388A00C87402 /* Project object */;
+}
