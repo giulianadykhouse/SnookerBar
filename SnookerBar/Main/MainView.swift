@@ -14,6 +14,7 @@ struct MainView: View {
         GridItem(.adaptive(minimum: 150, maximum: 250))
     ]
     var selection = ["booking", "menu", "news", "rules", "qr", "settings"]
+    @State var isAlerted = false
     
     var body: some View {
         NavigationStack {
@@ -36,15 +37,16 @@ struct MainView: View {
                             ForEach(selection, id:\.self) { type in
                                 NavigationLink {
                                     switch type {
-                                    case "booking": BookingView().navigationBarBackButtonHidden()
+                                    case "booking": BookingView().navigationBarBackButtonHidden().environmentObject(authViewModel)
                                     case "menu": MenuView().navigationBarBackButtonHidden()
                                     case "news": BarNewsView().navigationBarBackButtonHidden()
                                     case "rules": RulesView().navigationBarBackButtonHidden()
-                                    case "qr": QRView().navigationBarBackButtonHidden()
+                                    case "qr": 
+                                        QRView().navigationBarBackButtonHidden().environmentObject(authViewModel)
                                     case "settings": SettingsView()
                                             .environmentObject(authViewModel)
                                             .navigationBarBackButtonHidden()
-                                    default: BookingView().navigationBarBackButtonHidden()
+                                    default: BookingView().navigationBarBackButtonHidden().environmentObject(authViewModel)
                                     }
                                 } label: {
                                     ZStack {
@@ -66,6 +68,19 @@ struct MainView: View {
                     }
                     .scrollIndicators(.hidden)
                 }
+            }
+        }
+        .alert("To participate in the loyalty system you must be registered. Do you want to register now?", isPresented: $isAlerted) {
+            Button {
+                authViewModel.signOut()
+            } label: {
+                Text("Yes")
+            }
+            
+            Button {
+                
+            } label: {
+                Text("No")
             }
         }
         .onAppear {

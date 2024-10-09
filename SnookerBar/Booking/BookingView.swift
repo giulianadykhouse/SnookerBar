@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BookingView: View {
     
+    @EnvironmentObject var authViewModel: AuthViewModel
     @Environment(\.dismiss) var dismiss
     
     @State var name = ""
@@ -209,6 +210,11 @@ struct BookingView: View {
                     .padding(.bottom, 150)
                 }
                 .scrollIndicators(.hidden)
+            }
+        }
+        .onAppear {
+            if authViewModel.currentuser != nil {
+                email = authViewModel.currentuser?.email ?? ""
             }
         }
         .overlay {

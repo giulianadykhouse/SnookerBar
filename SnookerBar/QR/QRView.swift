@@ -10,6 +10,7 @@ import CoreImage.CIFilterBuiltins
 
 struct QRView: View {
     
+    @EnvironmentObject var authViewModel: AuthViewModel
     @Environment(\.dismiss) var dismiss
     @State var code = "932 133 412"
     let context = CIContext()
@@ -46,48 +47,96 @@ struct QRView: View {
                 
                 Spacer()
             }
-            
-            VStack {
-                Text("LOYALTY")
-                    .font(.system(size: 32, weight: .black))
-                    .foregroundColor(.white)
-                    .padding(.top, 43)
-                
-                ScrollView {
-                    Rectangle()
-                        .frame(width: 300, height: 300)
+            if authViewModel.currentuser != nil {
+                VStack {
+                    Text("LOYALTY")
+                        .font(.system(size: 32, weight: .black))
                         .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .overlay {
-                            Image(uiImage: generateQRCode(from: code))
-                                .resizable()
-                                .interpolation(.none)
-                                .frame(width: 280, height: 280)
-                        }
-                        .padding(.top, 40)
-
+                        .padding(.top, 43)
                     
-                    Rectangle()
-                        .frame(width: size().width  - 40, height: 70)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .overlay {
-                            Text("CODE: \(code)")
-                                .font(.system(size: 22, weight: .black))
-                        }
-                        .padding(.top, 40)
-                    
-                    Rectangle()
-                        .frame(width: size().width  - 40, height: 70)
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
-                        .overlay {
-                            Text("OFFERS: 10% Discount")
-                                .font(.system(size: 22, weight: .black))
-                        }
-                        .padding(.top, 40)
+                    ScrollView {
+                        Rectangle()
+                            .frame(width: 300, height: 300)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                            .overlay {
+                                Image(uiImage: generateQRCode(from: code))
+                                    .resizable()
+                                    .interpolation(.none)
+                                    .frame(width: 280, height: 280)
+                            }
+                            .padding(.top, 40)
+                        
+                        
+                        Rectangle()
+                            .frame(width: size().width  - 40, height: 70)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                            .overlay {
+                                Text("CODE: \(code)")
+                                    .font(.system(size: 22, weight: .black))
+                            }
+                            .padding(.top, 40)
+                        
+                        Rectangle()
+                            .frame(width: size().width  - 40, height: 70)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                            .overlay {
+                                Text("OFFERS: 10% Discount")
+                                    .font(.system(size: 22, weight: .black))
+                            }
+                            .padding(.top, 40)
+                    }
+                    .scrollIndicators(.hidden)
                 }
-                .scrollIndicators(.hidden)
+            } else {
+                VStack {
+                    Rectangle()
+                        .cornerRadius(16)
+                        .frame(width: size().width - 40, height: 500)
+                        .foregroundColor(.white.opacity(0.2))
+                        .overlay {
+                            VStack {
+                                Text("To participate in the loyalty system you must be registered. \n\nDo you want to register now?")
+                                    .foregroundStyle(.white)
+                                    .font(.system(size: 24, weight: .bold))
+                                    .padding(.horizontal)
+                                    .multilineTextAlignment(.center)
+                                
+                                HStack(spacing: 40) {
+                                    Button {
+                                        authViewModel.signOut()
+                                    } label: {
+                                        Text("YES")
+                                            .foregroundStyle(.white)
+                                    }
+                                    .padding()
+                                    .background {
+                                        Rectangle()
+                                            .foregroundColor(.semiPurple)
+                                            .frame(height: 60)
+                                            .cornerRadius(16)
+                                    }
+                                    
+                                    Button {
+                                        dismiss()
+                                    } label: {
+                                        Text("NO")
+                                            .foregroundStyle(.white)
+                                    }
+                                    .padding()
+                                    .background {
+                                        Rectangle()
+                                            .foregroundColor(.semiPurple)
+                                            .frame(height: 60)
+                                            .cornerRadius(16)
+                                    }
+                                }
+                                .padding(.top, 50)
+                            }
+                        }
+                }
             }
         }
         .onAppear {
@@ -120,4 +169,5 @@ struct QRView: View {
 
 #Preview {
     QRView()
+        .environmentObject(AuthViewModel())
 }

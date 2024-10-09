@@ -143,7 +143,9 @@ struct SettingsView: View {
                             }
                         }
                         .padding(.top, 50)
-                        
+                        .onAppear {
+                            print(authViewModel.currentuser)
+                        }
                         
                         if authViewModel.currentuser != nil {
                             Button {
@@ -162,6 +164,7 @@ struct SettingsView: View {
                             }
                         }
                       
+                        
                     }
                 }
                 .scrollIndicators(.hidden)
