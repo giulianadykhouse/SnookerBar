@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6083D9220874031607CE0166 /* Pods_SnookerBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB2D52EE10D0FF4E7E87627 /* Pods_SnookerBar.framework */; };
 		64019D0D2CAD388B00C87402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D0C2CAD388B00C87402 /* AppDelegate.swift */; };
-		64019D0F2CAD388B00C87402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D0E2CAD388B00C87402 /* SceneDelegate.swift */; };
+		64019D0F2CAD388B00C87402 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D0E2CAD388B00C87402 /* Helper.swift */; };
 		64019D112CAD388B00C87402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D102CAD388B00C87402 /* ViewController.swift */; };
 		64019D142CAD388B00C87402 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 64019D132CAD388B00C87402 /* Base */; };
 		64019D162CAD388C00C87402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64019D152CAD388C00C87402 /* Assets.xcassets */; };
@@ -22,6 +22,12 @@
 		64019D312CAD684300C87402 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D302CAD684300C87402 /* LogInView.swift */; };
 		64019D332CAD6BB700C87402 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D322CAD6BB700C87402 /* RegistrationView.swift */; };
 		64019D362CAD788100C87402 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64019D352CAD788100C87402 /* BookingView.swift */; };
+		647C78AD2CBE61420013BE2C /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 647C78AC2CBE61420013BE2C /* SdkPushExpress */; };
+		647C78B02CBE616A0013BE2C /* FlagsmithClient in Frameworks */ = {isa = PBXBuildFile; productRef = 647C78AF2CBE616A0013BE2C /* FlagsmithClient */; };
+		647C78B22CBE62680013BE2C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 647C78B12CBE62680013BE2C /* PrivacyInfo.xcprivacy */; };
+		647C78BA2CBE638B0013BE2C /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C78B92CBE638B0013BE2C /* NotificationService.swift */; };
+		647C78BE2CBE638B0013BE2C /* notificationsvc.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 647C78B72CBE638B0013BE2C /* notificationsvc.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		647C78C42CBE63B50013BE2C /* SdkPushExpress in Frameworks */ = {isa = PBXBuildFile; productRef = 647C78C32CBE63B50013BE2C /* SdkPushExpress */; };
 		64A085A72CAEB81A00CB77ED /* NewsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A085A62CAEB81A00CB77ED /* NewsDetailsView.swift */; };
 		64AB80C32CAEA16B0089D316 /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB80C22CAEA16B0089D316 /* RulesView.swift */; };
 		64AB80C52CAEAC5B0089D316 /* RuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB80C42CAEAC5B0089D316 /* RuleDetailView.swift */; };
@@ -36,12 +42,36 @@
 		64F5CDCB2CAD8AAA006D883D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F5CDCA2CAD8AAA006D883D /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		647C78BC2CBE638B0013BE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64019D012CAD388A00C87402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 647C78B62CBE638B0013BE2C;
+			remoteInfo = notificationsvc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		647C78C22CBE638B0013BE2C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				647C78BE2CBE638B0013BE2C /* notificationsvc.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C3DB0D74BB9555A99D7AD75 /* Pods-SnookerBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnookerBar.release.xcconfig"; path = "Target Support Files/Pods-SnookerBar/Pods-SnookerBar.release.xcconfig"; sourceTree = "<group>"; };
 		3362129DE834C2D21C68A627 /* Pods-SnookerBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnookerBar.debug.xcconfig"; path = "Target Support Files/Pods-SnookerBar/Pods-SnookerBar.debug.xcconfig"; sourceTree = "<group>"; };
 		64019D092CAD388B00C87402 /* SnookerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnookerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64019D0C2CAD388B00C87402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64019D0E2CAD388B00C87402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64019D0E2CAD388B00C87402 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		64019D102CAD388B00C87402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64019D132CAD388B00C87402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64019D152CAD388C00C87402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +85,10 @@
 		64019D302CAD684300C87402 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		64019D322CAD6BB700C87402 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		64019D352CAD788100C87402 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		647C78B12CBE62680013BE2C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		647C78B72CBE638B0013BE2C /* notificationsvc.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notificationsvc.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C78B92CBE638B0013BE2C /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		647C78BB2CBE638B0013BE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64A085A62CAEB81A00CB77ED /* NewsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsView.swift; sourceTree = "<group>"; };
 		64AB80C22CAEA16B0089D316 /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		64AB80C42CAEAC5B0089D316 /* RuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDetailView.swift; sourceTree = "<group>"; };
@@ -76,7 +110,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647C78B02CBE616A0013BE2C /* FlagsmithClient in Frameworks */,
+				647C78AD2CBE61420013BE2C /* SdkPushExpress in Frameworks */,
 				6083D9220874031607CE0166 /* Pods_SnookerBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647C78B42CBE638B0013BE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647C78C42CBE63B50013BE2C /* SdkPushExpress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				64019D0B2CAD388B00C87402 /* SnookerBar */,
+				647C78B82CBE638B0013BE2C /* notificationsvc */,
 				64019D0A2CAD388B00C87402 /* Products */,
 				1036A918C5CC63B5427EFF8F /* Pods */,
 				78F73327CE8B9249A5B1DE46 /* Frameworks */,
@@ -106,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				64019D092CAD388B00C87402 /* SnookerBar.app */,
+				647C78B72CBE638B0013BE2C /* notificationsvc.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +178,7 @@
 				64019D152CAD388C00C87402 /* Assets.xcassets */,
 				64019D172CAD388C00C87402 /* LaunchScreen.storyboard */,
 				64019D1A2CAD388C00C87402 /* Info.plist */,
+				647C78B12CBE62680013BE2C /* PrivacyInfo.xcprivacy */,
 			);
 			path = SnookerBar;
 			sourceTree = "<group>";
@@ -140,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				64019D0C2CAD388B00C87402 /* AppDelegate.swift */,
-				64019D0E2CAD388B00C87402 /* SceneDelegate.swift */,
+				64019D0E2CAD388B00C87402 /* Helper.swift */,
 				64019D102CAD388B00C87402 /* ViewController.swift */,
 			);
 			path = APP;
@@ -196,6 +243,15 @@
 				64019D352CAD788100C87402 /* BookingView.swift */,
 			);
 			path = Booking;
+			sourceTree = "<group>";
+		};
+		647C78B82CBE638B0013BE2C /* notificationsvc */ = {
+			isa = PBXGroup;
+			children = (
+				647C78B92CBE638B0013BE2C /* NotificationService.swift */,
+				647C78BB2CBE638B0013BE2C /* Info.plist */,
+			);
+			path = notificationsvc;
 			sourceTree = "<group>";
 		};
 		64AB80C12CAEA1640089D316 /* Rules */ = {
@@ -269,15 +325,42 @@
 				64019D062CAD388B00C87402 /* Frameworks */,
 				64019D072CAD388B00C87402 /* Resources */,
 				64543039396373A6D733795B /* [CP] Embed Pods Frameworks */,
+				74C89A5EDB84ADFE915B008C /* [CP] Copy Pods Resources */,
+				647C78C22CBE638B0013BE2C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				647C78BD2CBE638B0013BE2C /* PBXTargetDependency */,
+			);
+			name = SnookerBar;
+			packageProductDependencies = (
+				647C78AC2CBE61420013BE2C /* SdkPushExpress */,
+				647C78AF2CBE616A0013BE2C /* FlagsmithClient */,
+			);
+			productName = SnookerBar;
+			productReference = 64019D092CAD388B00C87402 /* SnookerBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		647C78B62CBE638B0013BE2C /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 647C78BF2CBE638B0013BE2C /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				647C78B32CBE638B0013BE2C /* Sources */,
+				647C78B42CBE638B0013BE2C /* Frameworks */,
+				647C78B52CBE638B0013BE2C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SnookerBar;
-			productName = SnookerBar;
-			productReference = 64019D092CAD388B00C87402 /* SnookerBar.app */;
-			productType = "com.apple.product-type.application";
+			name = notificationsvc;
+			packageProductDependencies = (
+				647C78C32CBE63B50013BE2C /* SdkPushExpress */,
+			);
+			productName = notificationsvc;
+			productReference = 647C78B72CBE638B0013BE2C /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -292,6 +375,9 @@
 					64019D082CAD388B00C87402 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					647C78B62CBE638B0013BE2C = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 64019D042CAD388A00C87402 /* Build configuration list for PBXProject "SnookerBar" */;
@@ -303,11 +389,16 @@
 				Base,
 			);
 			mainGroup = 64019D002CAD388A00C87402;
+			packageReferences = (
+				647C78AB2CBE61420013BE2C /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */,
+				647C78AE2CBE616A0013BE2C /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */,
+			);
 			productRefGroup = 64019D0A2CAD388B00C87402 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				64019D082CAD388B00C87402 /* SnookerBar */,
+				647C78B62CBE638B0013BE2C /* notificationsvc */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +411,15 @@
 				64019D162CAD388C00C87402 /* Assets.xcassets in Resources */,
 				64C1738F2CB3E81F00255254 /* GoogleService-Info.plist in Resources */,
 				64019D192CAD388C00C87402 /* Base in Resources */,
+				647C78B22CBE62680013BE2C /* PrivacyInfo.xcprivacy in Resources */,
 				64019D142CAD388B00C87402 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647C78B52CBE638B0013BE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +465,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		74C89A5EDB84ADFE915B008C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnookerBar/Pods-SnookerBar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -388,7 +504,7 @@
 				64A085A72CAEB81A00CB77ED /* NewsDetailsView.swift in Sources */,
 				64019D312CAD684300C87402 /* LogInView.swift in Sources */,
 				64019D2B2CAD393F00C87402 /* View + Extension.swift in Sources */,
-				64019D0F2CAD388B00C87402 /* SceneDelegate.swift in Sources */,
+				64019D0F2CAD388B00C87402 /* Helper.swift in Sources */,
 				64F5CDC52CAD88C8006D883D /* RulesCellView.swift in Sources */,
 				64019D362CAD788100C87402 /* BookingView.swift in Sources */,
 				64E0D4142CB2AAA500DF6190 /* AuthViewModel.swift in Sources */,
@@ -398,7 +514,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		647C78B32CBE638B0013BE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				647C78BA2CBE638B0013BE2C /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		647C78BD2CBE638B0013BE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 647C78B62CBE638B0013BE2C /* notificationsvc */;
+			targetProxy = 647C78BC2CBE638B0013BE2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64019D122CAD388B00C87402 /* Main.storyboard */ = {
@@ -543,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3362129DE834C2D21C68A627 /* Pods-SnookerBar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SnookerBar/SnookerBar.entitlements;
@@ -555,14 +688,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -580,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C3DB0D74BB9555A99D7AD75 /* Pods-SnookerBar.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SnookerBar/SnookerBar.entitlements;
@@ -592,17 +725,78 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		647C78C02CBE638B0013BE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		647C78C12CBE638B0013BE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notificationsvc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notificationsvc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SnookerBar.notificationsvc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -634,7 +828,53 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		647C78BF2CBE638B0013BE2C /* Build configuration list for PBXNativeTarget "notificationsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647C78C02CBE638B0013BE2C /* Debug */,
+				647C78C12CBE638B0013BE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		647C78AB2CBE61420013BE2C /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pushexpress/pushexpress-swift-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		647C78AE2CBE616A0013BE2C /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flagsmith/flagsmith-ios-client.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		647C78AC2CBE61420013BE2C /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647C78AB2CBE61420013BE2C /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+		647C78AF2CBE616A0013BE2C /* FlagsmithClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647C78AE2CBE616A0013BE2C /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */;
+			productName = FlagsmithClient;
+		};
+		647C78C32CBE63B50013BE2C /* SdkPushExpress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 647C78AB2CBE61420013BE2C /* XCRemoteSwiftPackageReference "pushexpress-swift-sdk" */;
+			productName = SdkPushExpress;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64019D012CAD388A00C87402 /* Project object */;
 }

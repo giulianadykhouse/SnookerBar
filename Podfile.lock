@@ -1145,6 +1145,9 @@ PODS:
     - abseil/meta/type_traits
     - abseil/xcprivacy
   - abseil/xcprivacy (1.20240116.2)
+  - AppsFlyerFramework (6.15.3):
+    - AppsFlyerFramework/Main (= 6.15.3)
+  - AppsFlyerFramework/Main (6.15.3)
   - BoringSSL-GRPC (0.0.36):
     - BoringSSL-GRPC/Implementation (= 0.0.36)
     - BoringSSL-GRPC/Interface (= 0.0.36)
@@ -1312,12 +1315,14 @@ PODS:
   - RecaptchaInterop (100.0.0)
 
 DEPENDENCIES:
+  - AppsFlyerFramework
   - FirebaseAuth
   - FirebaseFirestore
 
 SPEC REPOS:
   trunk:
     - abseil
+    - AppsFlyerFramework
     - BoringSSL-GRPC
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -1338,6 +1343,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: d121da9ef7e2ff4cab7666e76c5a3e0915ae08c3
+  AppsFlyerFramework: ad7ff0d22aa36c7f8cc4f71a5424e19b89ccb8ae
   BoringSSL-GRPC: ca6a8e5d04812fce8ffd6437810c2d46f925eaeb
   FirebaseAppCheckInterop: ea21450529cf0ebd132788dd8916a0269abc684f
   FirebaseAuth: 2a198b8cdbbbd457f08d74df7040feb0a0e7777a
@@ -1356,6 +1362,6 @@ SPEC CHECKSUMS:
   nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: a1304763fe57dc1c00fc36c5018a61ae0dd73946
+PODFILE CHECKSUM: 04765e0e1a2d16e680a65534496901cc0d4e65bc
 
 COCOAPODS: 1.15.2

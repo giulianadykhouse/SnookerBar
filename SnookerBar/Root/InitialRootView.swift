@@ -10,6 +10,7 @@ import SwiftUI
 struct InitialRootView: View {
     
     @StateObject private var viewModel = AuthViewModel()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some View {
         Group {
@@ -19,6 +20,11 @@ struct InitialRootView: View {
             } else {
                 InitialView(viewModel: viewModel)
             }
+        }
+        .onAppear {
+            AppDelegate.orientationLock = .portrait
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+            UINavigationController.attemptRotationToDeviceOrientation()
         }
     }
 }

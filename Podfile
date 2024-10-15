@@ -7,6 +7,7 @@ target 'SnookerBar' do
 
    pod 'FirebaseAuth'
    pod 'FirebaseFirestore'
+   pod 'AppsFlyerFramework'
 
   # Pods for SnookerBar
 
